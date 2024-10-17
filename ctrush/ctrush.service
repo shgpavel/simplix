@@ -1,0 +1,12 @@
+[Unit]
+Description=Simple trashcan service
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=5s
+ExecStart=/usr/bin/ctrush
+WorkingDirectory=
+
+[Install]
+WantedBy=default.target

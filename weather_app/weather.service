@@ -1,0 +1,13 @@
+[Unit]
+Description=Simple weather service
+After=network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=5s
+ExecStart=/usr/bin/current_weather
+WorkingDirectory=/opt/weather
+
+[Install]
+WantedBy=default.target

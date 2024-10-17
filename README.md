@@ -1,2 +1,2 @@
-# simplix
-Superrepo for small linux tools by me
+## simplix
+superrepo for small linux tools
